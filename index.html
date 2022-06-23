@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Fontawesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- jQuery 1.8 or later, 33 KB -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- Fotorama from CDNJS, 19 KB -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+	<style>
+		.card {
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			transition: 0.3s;
+			width: 100%;
+			border-radius: 5px;
+		}
+
+		.card:hover {
+			box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+		}
+
+		img {
+			border-radius: 5px 5px 0 0;
+		}
+
+		.container {
+			padding: 10px 16px;
+		}
+
+		.txt-gray {
+			color: #6e7376 !important;
+		}
+
+		.bg-gray {
+			background-color: #f3f3f3 !important;
+		}
+
+		.readmoreBtn {
+			background-color: #004690;
+			color: white;
+			border-radius: 0% !important;
+		}
+
+		.priceTag {
+			background-color: #0000007d;
+			color: white;
+			border-radius: 0% !important;
+			position: absolute;
+			bottom: 0px;
+			left: 0px;
+		}
+
+		.sold {
+			background-color: #be202f;
+		}
+
+		.underoffer {
+			background-color: #23a03f;
+		}
+
+		.txt-green {
+			color: #23a03f;
+		}
+
+		.txt-blue {
+			color: #004690;
+		}
+
+		.statusTag {
+			color: white;
+			border-radius: 0% !important;
+			position: absolute;
+			top: 10px;
+			left: 10px;
+		}
+		.align-item-center{
+			align-items: center;
+		}
+	</style>
+</head>
+
+<body class="p-5">
+
+	<!-- ||--------------------------------------------------------------------------------|| -->
+	<!-- || SLIDER/SIDE BAR || -->
+	<!-- ||--------------------------------------------------------------------------------|| -->
+	<div class="row">
+		<div class="col-lg-9">
+			<div class="fotorama" data-nav="thumbs" data-thumbwidth="150" data-thumbheight="150">
+				<img src="https://s.fotorama.io/1.jpg">
+				<img src="https://s.fotorama.io/2.jpg">
+				<img src="https://s.fotorama.io/1.jpg">
+				<img src="https://s.fotorama.io/2.jpg">
+				<img src="https://s.fotorama.io/1.jpg">
+				<img src="https://s.fotorama.io/2.jpg">
+				<img src="https://s.fotorama.io/1.jpg">
+				<img src="https://s.fotorama.io/2.jpg">
+				<img src="https://s.fotorama.io/1.jpg">
+				<img src="https://s.fotorama.io/2.jpg">
+				<img src="https://s.fotorama.io/1.jpg">
+				<img src="https://s.fotorama.io/2.jpg">
+				<img src="https://s.fotorama.io/1.jpg">
+				<img src="https://s.fotorama.io/2.jpg">
+			</div>
+		</div>
+		<div class="col-lg-3">
+			<h4 class="txt-gray">Price:</h4>
+			<h2 class="txt-green">$129,950</h2>
+			<h4 class="txt-gray pt-3">Size:</h4>
+			<h2 class="txt-green">40 X 20</h2>
+			<h4 class="txt-gray pt-3">Bedroom:</h4>
+			<h2 class="txt-green"><i class="fa fa-bed txt-blue pr-2"></i>2</h2>
+			<h4 class="txt-gray pt-3">Bathrooms:</h4>
+			<h2 class="txt-green"><i class="fa fa-bath txt-blue pr-2"></i>2</h2>
+			<div class="justify-content-center d-flex">
+				<button class="btn readmoreBtn mt-5 py-3 px-4"> Request a call back</button>
+			</div>
+			<p class="text-center txt-gray mt-3 mb-0">Or Call:</p>
+			<h2 class="text-center txt-green">0322 4565555</h2>
+		</div>
+	</div>
+	<!-- ||--------------------------------------------------------------------------------|| -->
+	<!-- || KEY FEATURES || -->
+	<!-- ||--------------------------------------------------------------------------------|| -->
+	<div class="bg-gray p-5 mt-5">
+		<h2 class="text-center txt-green mb-5">Key Features</h2>
+		<div class="row">
+			<div class="col-sm-4 pb-4">
+				<div class="d-flex align-item-center">
+					<i class="fa fa-check-circle txt-blue pr-2 fa-2x"></i>
+					Own driveway
+				</div>
+			</div>
+			<div class="col-sm-4 pb-4">
+				<div class="d-flex align-item-center">
+					<i class="fa fa-check-circle txt-blue pr-2 fa-2x"></i>
+					Patio
+				</div>
+			</div>
+			<div class="col-sm-4 pb-4">
+				<div class="d-flex align-item-center">
+					<i class="fa fa-check-circle txt-blue pr-2 fa-2x"></i>
+					Top Location
+				</div>
+			</div>
+			<div class="col-sm-4 pb-4">
+				<div class="d-flex align-item-center">
+					<i class="fa fa-check-circle txt-blue pr-2 fa-2x"></i>
+					Decking
+				</div>
+			</div>
+			<div class="col-sm-4 pb-4">
+				<div class="d-flex align-item-center">
+					<i class="fa fa-check-circle txt-blue pr-2 fa-2x"></i>
+					Gas Central heating
+				</div>
+			</div>
+			<div class="col-sm-4 pb-4">
+				<div class="d-flex align-item-center">
+					<i class="fa fa-check-circle txt-blue pr-2 fa-2x"></i>
+					Landscaped Gardens
+				</div>
+			</div>
+			<div class="col-sm-4 pb-4">
+				<div class="d-flex align-item-center">
+					<i class="fa fa-check-circle txt-blue pr-2 fa-2x"></i>
+					Balcony
+				</div>
+			</div>
+			<div class="col-sm-4 pb-4">
+				<div class="d-flex align-item-center">
+					<i class="fa fa-check-circle txt-blue pr-2 fa-2x"></i>
+					Double glazing
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ||--------------------------------------------------------------------------------|| -->
+	<!-- || RECENT PROPERTIES || -->
+	<!-- ||--------------------------------------------------------------------------------|| -->
+	<h4 class="pb-3 pt-5">Recent Properties</h4>
+	<div class="row">
+		<div class="col-sm-3">
+			<div class="card">
+				<div class="position-relative">
+					<img src="https://s3.amazonaws.com/images-aarz/uploads/properties/2017/5/22-marla-bungalow-for-sale-in-state-life-housing-society-lahore-49636-image-2-actual.jpg"
+						alt="Avatar" style="width:100%">
+					<div class="btn priceTag">$129,950</div>
+					<div class="btn statusTag sold">Sold</div>
+				</div>
+				<div class="container bg-gray">
+					<h4 class="mb-0"><b class="txt-gray">Pemberton Arrondale Luxary Lodge</b></h4>
+					<b class="txt-gray">40 X 20</b>
+					<p class="pt-2 txt-gray">This superb Atlas Concept 2 Bedroom 2006 model is located in a fantastic
+						corner position</p>
+
+					<button class="btn readmoreBtn"> Read more</button>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="card">
+				<div class="position-relative">
+					<img src="https://s3.amazonaws.com/images-aarz/uploads/properties/2017/5/22-marla-bungalow-for-sale-in-state-life-housing-society-lahore-49636-image-2-actual.jpg"
+						alt="Avatar" style="width:100%">
+					<div class="btn priceTag">$129,950</div>
+					<div class="btn statusTag underoffer">Under Offer</div>
+				</div>
+				<div class="container bg-gray">
+					<h4 class="mb-0"><b class="txt-gray">Pemberton Arrondale Luxary Lodge</b></h4>
+					<b class="txt-gray">40 X 20</b>
+					<p class="pt-2 txt-gray">This superb Atlas Concept 2 Bedroom 2006 model is located in a fantastic
+						corner position</p>
+
+					<button class="btn readmoreBtn"> Read more</button>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="card">
+				<div class="position-relative">
+					<img src="https://s3.amazonaws.com/images-aarz/uploads/properties/2017/5/22-marla-bungalow-for-sale-in-state-life-housing-society-lahore-49636-image-2-actual.jpg"
+						alt="Avatar" style="width:100%">
+					<div class="btn priceTag">$129,950</div>
+					<div class="btn statusTag sold">Sold</div>
+				</div>
+				<div class="container bg-gray">
+					<h4 class="mb-0"><b class="txt-gray">Pemberton Arrondale Luxary Lodge</b></h4>
+					<b class="txt-gray">40 X 20</b>
+					<p class="pt-2 txt-gray">This superb Atlas Concept 2 Bedroom 2006 model is located in a fantastic
+						corner position</p>
+
+					<button class="btn readmoreBtn"> Read more</button>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="card">
+				<div class="position-relative">
+					<img src="https://s3.amazonaws.com/images-aarz/uploads/properties/2017/5/22-marla-bungalow-for-sale-in-state-life-housing-society-lahore-49636-image-2-actual.jpg"
+						alt="Avatar" style="width:100%">
+					<div class="btn priceTag">$129,950</div>
+					<div class="btn statusTag sold">Sold</div>
+				</div>
+				<div class="container bg-gray">
+					<h4 class="mb-0"><b class="txt-gray">Pemberton Arrondale Luxary Lodge</b></h4>
+					<b class="txt-gray">40 X 20</b>
+					<p class="pt-2 txt-gray">This superb Atlas Concept 2 Bedroom 2006 model is located in a fantastic
+						corner position</p>
+
+					<button class="btn readmoreBtn"> Read more</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>
